@@ -1,0 +1,826 @@
+@import"reset.css";
+@import "variable";
+
+body {
+
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    
+
+  
+    .lista-navegacion {
+  
+      display: flex;
+      flex-direction: row;
+      justify-content:baseline;
+      align-items: baseline;
+      gap: 30px;
+      font-size:medium;
+      width: 20%;
+      height: 80px;
+      margin-top: 0%;
+      margin-left: 0%;
+      margin-bottom: 0%;
+      list-style-type:none ;
+      
+    }
+
+      .logo-rockstar {
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        width: 60px ;
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 40px;
+        filter: drop-shadow(0px -4px 2px rgb(255, 0, 0));
+      }
+
+      .menu-toggle {
+        display: none;
+        }
+    
+        .icono {
+          display: flex;
+          flex-direction: column;
+          cursor: pointer;
+          gap: 5px;
+          width: 40%;
+    
+          span {
+          display: block;
+          width: 20px;
+          height: 3px;
+          background-color: white;
+    
+          }
+        }
+        .menu-hamburguesa {
+          margin-left: 50px;
+          
+        }
+
+
+
+    
+      .menu-juegos{
+        margin-right: 50px;
+        margin-left: 20px;
+        }
+        
+        .menu-juegos:hover {
+          border-bottom: 1px solid rgb(255, 255, 255);
+          cursor: pointer;
+         
+
+        }
+
+        .sub-lista {
+          background-color: rgb(0, 0, 0);
+          position: absolute;
+          display: flex;
+          display: none;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin-top: 25px;
+
+          .imagenes-lista {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items: center;
+            padding: 15px;
+            margin: 0;
+          }
+
+    
+        }
+
+        .imagenes-lista:hover {
+          transition: 1sg;
+          transform: scale(1.1);
+        }
+
+        .menu-juegos:hover > .sub-lista {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+
+        }
+
+        .menu-barra {
+          display: flex;
+          flex-direction: row;
+          justify-content:center;
+          gap: 50px;
+          
+          .menu-asistencia {
+            width: 140px;
+          }
+        }
+
+        .menu-asistencia:hover {
+          border-bottom: 1px solid rgb(255, 255, 255);
+          cursor: pointer;
+          
+
+        }
+
+       
+      
+
+      .menu:hover {
+      border-bottom: 1px solid rgb(255, 255, 255);
+      cursor: pointer;
+     
+      
+  
+
+      }
+    
+
+    .lista-navegacion2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      width: 40%;
+      height: 80px;
+      background-color: rgb(0, 0, 0);
+      list-style-type: none;
+
+      
+      
+
+      .botton-launcher {
+          background-color: rgb(255, 170, 0);
+        border-radius: 5px;
+        font-size: 14px;
+        width: 200px;
+        height: 40px;
+        cursor: pointer;
+
+      }
+
+      .botton-launcher:hover {
+        background-color: rgb(214, 144, 59);
+        box-shadow: rgb(0, 0, 0);
+        transition: 1s;
+      }
+
+      .lupa {
+        width: 40px;
+        cursor: pointer;
+      }
+
+      .inicio-sesion {
+        width: 50px;
+        cursor: pointer;
+    
+      }
+    
+    }
+  }
+
+  /*aqui empieza la primera seccion*/
+  
+  #juegos {
+    background-color: rgb(0, 0, 0) ;
+    width: 100%;
+  }
+
+  #seccion-1 {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .contenido1 {
+      width: 70%;
+    }
+
+    .imagen-1 {
+      width: 100%;
+      margin-left:  1px;
+      float: inline-end;
+      
+    }
+
+    .contenido2 {
+  
+      display: flex;
+      flex-direction: column;
+      justify-content:start;
+      align-items:start;
+      font-size: 24px; 
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(0, 0, 0);
+      width: 30%;
+      overflow: hidden;
+    
+    
+
+      h3 {
+        font-size: 16px;
+        margin-left: 40px;
+        margin-top: 80px;
+      }
+    
+      h2 {
+        margin-top: 0px;
+        margin-left: 40px;
+        font-size: 40px;
+      }
+    
+      .botton {
+        background-color:rgb(0, 0, 0);
+        border-color: rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        width: 250px;
+        height: 60px;
+        margin-top: 30px;
+        margin-left: 40px;
+        border-radius: 5px;
+        font-size:medium;
+        font-family:Arial, Helvetica, sans-serif;
+        cursor: pointer;
+      }
+
+      .botton:hover{
+        background-color:rgb(255, 170, 0);
+        color: rgb(0, 0, 0);
+        font-family:Arial, Helvetica, sans-serif;
+      }
+
+      .icono-2 {
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        gap: 10px;
+        width: 100%;
+        height: 30px;
+        margin-top: 250px;
+        margin-left: 40px;
+        
+        
+        }
+
+        span {
+          display: block;
+          gap: 40px;
+          width: 15px;
+          height: 15px;
+          background-color: white;
+          border-radius: 50%;  
+          border-color: black;
+        }
+
+        .barra {
+          width: 50px;
+          height: 15px;
+          border-radius: 10px;
+       }
+      
+
+        span:hover {
+          background-color:rgba(255, 255, 255, 0.727);
+          transform: scaleX(1.1);
+          transition: 0.3s;
+          padding: 8px;
+        }
+    }
+  }
+  
+
+  /*Aqui empieza la segunda seccion*/
+
+  #seccion-2 {
+    background-color: rgb(16, 15, 15);
+    font-size: 24px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      width: 100%;
+      margin-left: 40px;
+      margin-top: 60px;
+      margin-bottom: 30px;
+  
+    }
+    
+    .coleccion-cajas {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      overflow: hidden;
+      margin: 20px;
+     
+    }
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 20px;
+      padding: 0;
+      border-radius: 10px;
+      background-color: black;
+      overflow: hidden;
+      width: 400px;
+      
+      
+      
+    
+    }
+
+    .imagen {
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .titulo-1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 22px;
+      margin-top: 40px;
+      margin-bottom: 5px;
+      margin-left: 10px;
+      
+    }
+
+    .titulo-2 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      color: rgb(148, 136, 136);
+    }
+
+    p {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 24px;
+      margin-top: 40px;
+      margin-bottom: 50px;
+      margin-left: 10px;
+    }
+  }
+
+  .view-more-1 {
+      
+    margin-top: 40px;
+    margin-bottom: 150px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    
+  }
+ 
+  .view-more-1:hover {
+    background-color: #ffc400;
+    border-color: white;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 5px;
+    color: black;
+    
+  }
+  
+  /*aqui empieza la tercera session*/
+
+  #seccion-3 {
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    .portada{
+      background-color: black;
+      width: 90%;
+      
+    }
+
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 34px;
+
+    }
+
+    .imagen-sesion3 {
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      height: 500px;
+      margin-bottom: 40px;
+      
+      
+    }
+
+    .imagen-sesion3:hover {
+      transform: scale(1.1);
+      transition: 0;
+    }
+         
+   }
+    .img-juegos {
+      width: 90%;
+      height: 300px;
+      margin: 15px;
+     
+      border-radius: 10px;
+      margin-bottom: 80px;
+
+    }
+
+    .img-juegos:hover {
+      transform: scale(1.1);
+    }
+    
+    .view-more-2 {
+      
+      margin-top: 40px;
+      margin-bottom: 150px;
+      width: 150px;
+      background-color: black;
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 22px;
+    }
+   
+    .view-more-2:hover {
+      background-color: #ffc400;
+      border-color: white;
+      cursor: pointer;
+      font-size: 24px;
+      border-radius: 5px;
+      color: black;
+      
+      
+    }
+
+    .lista-de-juegos-destacados {
+
+      display: flex;
+      flex-direction: row;
+      justify-content:center;
+      gap: 15px;
+      width: 100%;
+      height: 350px;
+      
+      .img-juegos {
+        cursor: pointer;
+        width: 100%;
+        
+      }
+    }
+  }
+  
+  /*footer*/
+
+  footer {
+    background-color: black;
+  
+
+    .subscripcion {
+
+      background-image: url(https://wallpaperset.com/w/full/0/5/f/229041.jpg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      height: 600px;
+
+      .logo-rockstar-footer {
+       
+        width: 50px;
+        height: 50px;
+        margin-bottom: 40px;
+      }
+      
+
+      h3 {
+        color: rgb(253, 243, 243);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:20px;
+        margin-bottom: 60px;
+        
+      
+      }
+
+      .botton-suscribete {
+        width: 160px;
+        height: 40px;
+        padding-top: 3px;
+        padding-bottom: 5px;
+        text-align: center;
+        color: white;
+        background-color: black;
+        font-size:medium;
+        font-family:Arial, Helvetica, sans-serif
+
+      }
+
+      .botton-suscribete:hover {
+        background-color: rgba(255, 255, 255, 0.192)
+      }
+    }
+
+    
+
+    
+
+    .informacion1 {
+    
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: black;
+      margin-top: 20px;
+
+
+
+      .inf-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+        margin-left: 80px;
+        margin-bottom: 100px;
+        font-size: 20px;
+      }
+
+      li:hover {
+        color: #fa0;  
+      }
+
+      #idiomas {
+       margin-top: 20px;
+       margin-bottom: 20px;
+       padding: 5px;
+       font-size: 20px;
+       width: 300px;
+       overflow: hidden;
+      }
+
+      .button-idiomas {
+        background-color: white;
+        width: 170px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center ;
+        border-radius: 5px;
+       
+        .svg-navegador {
+          width: 20px;
+          margin-right: 1.7px;
+
+
+        }
+        
+      }
+      
+
+
+      .selecciona-idioma {
+        position: absolute;
+        margin-top: 0;
+        padding: 5px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        display: flex;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        overflow: hidden;
+       
+       
+
+      }
+    }
+  }
+
+    .selecciona-idioma li:hover {
+      color: #fa0;
+       
+    }
+
+   
+
+    
+
+    #idiomas:hover > .selecciona-idioma {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5px;
+
+      }
+    
+
+    .informacion2 {
+    
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 80px;
+
+      .inf-2  {
+        margin-left: 80px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        margin-bottom: 100px;
+        
+        li {
+          margin-bottom: 20px;
+        }
+       
+         
+      }
+
+      .inf-2 li:hover {
+        color: #fa0;
+      }
+    }
+
+    .redes-sociales {
+      background-color: black;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-right: 80px;
+      height: 50px;
+
+      .redes {
+       border-radius: 50%;
+       font-size: 0px;
+       width: 35px;
+       background-color: aliceblue;
+       margin: 5px;
+
+      }  
+    }
+
+    .redes:hover {
+      background-color: gray;
+  
+    
+    }
+
+
+    .final {
+      display: flex;
+      flex-direction: row;
+      justify-content:space-around;
+      width: 100%;
+      height: 80px;
+      padding: 30px ;
+    
+     
+
+      .lista-final {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: absolute;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+        overflow: hidden;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 18px;
+        background-image: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/26f95aa7677031d8cd56ea75250c7bdd.png);
+
+        li h3 {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          align-items: center;
+
+          
+          
+         }
+         .rockstar-games {
+          margin-right: 300px ;
+        }
+
+        .MCMXCVIII {
+           margin-left: 300px;
+        }
+
+      }
+    }
+  
+/*------------------------------------------------------------------------------------------------------------------*/
+    
+
+    /*Tamaño tablet*/
+    @media (min-width: 481px) and (max-width: 1024px) {
+      body {
+        width: 100%;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .logo-rockstar {
+        display: none;
+        
+      }
+      
+  
+        .menu-toggle {
+        display: none;
+        }
+    
+        .icono {
+          display: flex;
+          flex-direction: column;
+          cursor: pointer;
+          gap: 5px;
+          width: 40%;
+        }
+    
+          span {
+          display: block;
+          width: 20px;
+          height: 3px;
+          background-color: white;
+    
+          }
+          
+        }
+
+          
+      
+    
+
+   /*tamaño movil*/
+
+    @media (min-width: 0px) and (max-width: 740px) {
+
+        h2 {
+          background-color: rgb(142, 112, 216);
+          width: 20px;
+        }
+
+        .header {
+          display: none;
+
+        }
+
+        .lista-navegacion {
+          display: none;
+        }
+
+        .menu-barra {
+          display: none;
+
+        }
+      }
+   
